@@ -1,10 +1,13 @@
 import React from "react";
 import Posting from "./Posting";
+import { postings } from "./postings";
 
 function Gallery() {
   return (
     <div>
-      <Posting />
+      {postings.map((post) => {
+        return <Posting post={post}/>;
+      })}
     </div>
   );
 }
