@@ -1,14 +1,21 @@
 // Import data
+import Gallery from "./Gallery";
+import Searchbar from "./Searchbar";
+import Directory from "./Directory";
+import Sidebar from "./Sidebar";
 
 // Import components
-import './App.css';
+import "./App.css";
 
-function App(){
+function App() {
   return (
     <div>
       <h1>craigslist</h1>
       <div className="App">
-        {/* Your content will go here! */}
+        <Gallery />
+        <Searchbar />
+        <Directory />
+        <Sidebar />
       </div>
     </div>
   );
